@@ -2,14 +2,13 @@
 @import url("./css/login.css");
 @import url("./css/registrar.css");
 @import url("./css/slider.css");
-
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  /* text-decoration: none; */
   list-style: none;
 }
 
@@ -18,63 +17,58 @@ body {
   background: radial-gradient(139.54% 22.02% at 50.18% 100%, rgb(11, 23, 59) 0%, rgb(11, 23, 59) 31.77%, rgb(0, 0, 0) 100%) fixed;
   color: #ffffff;
   margin-top: 0;
-  padding-top: 0;  
-
-  
+  padding-top: 0;
 }
 
-.cabecera {
-  margin-bottom: 0px;
-  margin-left: 0;
-  color: #d4af37;
-  width: 100%;
- z-index: 20;
-  padding-top: 2em; 
-  padding-bottom: 1.5em;
-}
+
 
 .cabecera .min-height-index {
-  
   min-height: 100vh;
 }
 
-main{
+main {
   margin-top: 5rem;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
+
+
+/*------------------------//ESTILOS HEADER//--------------------------------------------------------*/
 
 .logo {
   width: 400px;
   height: auto;
   border: solid #d4af37;
   border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/*------------------------//ESTILOS HEADER//--------------------------------------------------------*/
-
-.menu {
-   display: flex;
+.cabecera {
+  color: #d4af37;
+  width: 100%;
+  z-index: 99;
+  padding: 1rem;
+  display: flex;
   align-items: center;
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 auto;
-  font-size: 25px;
+  font-size: 1.56rem;
   position: fixed;
-  top:0;
-  left: 0;  
+  top: 0;
+  left: 0;
   min-width: 100%;
   height: 5rem;
   background-color: #080f28;
- /*  opacity: 0.8; */
-  box-shadow: 0 12px 25px -16px black; 
+  box-shadow: 0 12px 25px -16px black;
+  max-width: 1200px;
 }
 
 a {
   color: #d4af37;
+  text-decoration: none;
 }
 
 .responsive-menu {
@@ -83,10 +77,6 @@ a {
   align-items: baseline;
   gap: 70px;
 }
-
-/* .navbar{
- position: absolute;
-} */
 
 .navbar ul {
   display: flex;
@@ -110,16 +100,15 @@ a {
   display: none;
 }
 
-.input-search{
-padding: 0.1em;
-padding-left: 0.3em;
-font-size: 0.8em;
-max-width: 6em;
-height: 2em;
+.input-search {
+  padding: 0.1em;
+  padding-left: 0.3em;
+  font-size: 0.8em;
+  max-width: 6em;
+  height: 2em;
 }
 
 .header-content {
- /*  margin-top: 10px; */
   background-image: url(./images/header-portada.png);
   background-position: top center;
   background-repeat: no-repeat;
@@ -154,10 +143,8 @@ height: 2em;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  /* margin-left: 550px;*/
   align-self: self-start;
   gap: 30px;
-  /*margin-bottom: 250px;*/
 }
 
 .portada_derecha h2 {
@@ -171,7 +158,6 @@ height: 2em;
   width: 150px;
   height: 150px;
   margin-left: 450px;
-  /*margin-bottom: 250px;*/
 }
 
 .btn-log {
@@ -200,31 +186,33 @@ height: 2em;
   font-size: 20px;
 }
 
+/*------------------------//FIN ESTILOS HEADER//--------------------------------------------------------*/
+
 /*------------------------//ESTILOS SECCIONES PELICULAS MÁS VISTAS Y ESTRENOS//--------------------------------------------------------*/
-.main-container{
+.main-container {
   display: flex;
-  gap:4em;
-  }
-  
-  .sidebar{
-    display: flex;
-   min-width: 225px;
-    display: flex;
-    flex-direction: column;
-    text-align:justify;
-    margin-top: 4.5em;
-    margin-left: 1.7em;    
-    padding: 1em;
-    flex-grow: 0;
-  }
-  
-  .content{
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    
-  }
-  
+  gap: 4em;
+}
+
+.sidebar {
+  display: flex;
+  min-width: 225px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin-top: 4.5em;
+  margin-left: 1.7em;
+  padding: 1em;
+  flex-grow: 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+
+}
+
 
 
 
@@ -236,16 +224,15 @@ height: 2em;
   /* flex-wrap: wrap; y gap de 10 incluir eltitulo y año dentro del flex aplicar un flex en card trendin y card news para alinear sus elementos*/
   gap: 30px;
   justify-content: left;
-  }
+}
 
-  .card-trending-container{
-    padding-left: 3em;
-    
-  }
+.card-trending-container {
+  padding-left: 3em;
+}
 
-  .card-news-container{
-    justify-content: space-around;
-  }
+.card-news-container {
+  justify-content: space-around;
+}
 
 
 .card-trending,
@@ -290,7 +277,7 @@ height: 2em;
   padding: 0.2em;
 }
 
-.seccion-2 h2{
+.seccion-2 h2 {
   text-align: center;
   background-color: #060b1e;
   min-width: 100%;
@@ -324,18 +311,18 @@ height: 2em;
 
 /*------------------------//ESTILOS ASIDE PELICULAS POR CATEGORÍA//--------------------------------------------------------*/
 .sidebar h2 {
-  
+
   letter-spacing: 0.03em;
 }
 
-.category-container{
+.category-container {
   background-color: #060b1e;
   border-radius: 2%;
   padding-top: 0.5em;
   padding: 1em;
 }
 
-.category-list{
+.category-list {
   display: flex;
   flex-direction: column;
 }
@@ -361,10 +348,10 @@ footer {
   background-color: #060b1e;
   margin-bottom: 0px;
   align-items: center;
-  
+
 }
 
-.container.footer{
+.container.footer {
   margin-top: 2em;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -417,7 +404,7 @@ footer p {
 }
 
 .footer-menu ul li a:hover {
-  background-color:#202746;
+  background-color: #202746;
   border-radius: 6%;
 }
 
@@ -427,11 +414,14 @@ footer p {
 
 @media (max-width: 1200px) {
   .cabecera {
-    padding-top: 2em;
+    /* padding-top: 2em;
     padding-bottom: 2em;
+    margin-top: -10px; */
+    max-width: 900px;
+    margin: 0 auto;
   }
 
-  .content{
+  .content {
     margin-top: -10px;
   }
 
@@ -526,19 +516,19 @@ footer p {
 }
 
 @media (max-width: 990px) {
-  
-.content{
-  margin-top: -20px;
-}
+
+  .content {
+    margin-top: -20px;
+  }
 
   .container {
     max-width: 850px;
-    
+
   }
 
-  
 
-  .main-container{
+
+  .main-container {
     flex-direction: column-reverse;
   }
 
@@ -559,10 +549,10 @@ footer p {
     box-shadow: none;
     margin-bottom: 0;
     bottom: 0;
-    
+
   }
 
-  .input-search{
+  .input-search {
     display: none;
   }
 
@@ -698,28 +688,28 @@ footer p {
     padding-top: 0;
   }
 
-.sidebar{
-  margin-top: 1em;
-  margin-right: 1.5em;
-  background-color: #060b1e;
-}
+  .sidebar {
+    margin-top: 1em;
+    margin-right: 1.5em;
+    background-color: #060b1e;
+  }
 
-.sidebar h2{
-  text-align: center;
-  margin-bottom: 1em;
-  color: #d4af37;
-  background-color: #060b1e;
-}
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #d4af37;
+    background-color: #060b1e;
+  }
 
-  .category-list{
-    
-    flex-direction:row;
+  .category-list {
+
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content:left;
+    justify-content: left;
     background-color: #080f28;
     padding: 0.5em;
-    gap:1em;
-    
+    gap: 1em;
+
   }
 
   footer {
@@ -799,7 +789,10 @@ footer p {
 
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
   .topnav a.icon {
     float: right;
     display: block;
@@ -807,12 +800,16 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
+
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
@@ -822,9 +819,9 @@ footer p {
 
 @media (max-width: 576px) {
 
-  .container{
-   width: 90%;
-  } 
+  .container {
+    width: 90%;
+  }
 
   .menu {
     width: 100%;
@@ -834,44 +831,44 @@ footer p {
     padding-bottom: 20px;
   }
 
- .header-content{
-  width: 100%; 
-  display: flex;
- flex-direction: column-reverse;
+  .header-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  .portada_derecha{
+  .portada_derecha {
     display: flex;
     flex-direction: row;
     margin-bottom: 0%;
   }
 
-  .portada_izquierda{
+  .portada_izquierda {
     display: flex;
     align-items: center;
     justify-content: center;
-   /* flex-direction: row;   */
+    /* flex-direction: row;   */
     height: 100%;
     margin-bottom: 0%;
   }
 
-  .portada_izquierda img{
+  .portada_izquierda img {
     width: auto;
   }
 
-  .btn-portada{
+  .btn-portada {
     text-align: start;
     margin-left: -50%;
-    }
+  }
 
-  .btn-portada p{
+  .btn-portada p {
     font-size: 2em;
-  }  
+  }
 
-  .btn-portada p:hover{
-    box-shadow:0px 0px 10px 2px rgba(40, 39, 39, 0.5);
+  .btn-portada p:hover {
+    box-shadow: 0px 0px 10px 2px rgba(40, 39, 39, 0.5);
     border: solid thin;
-  } 
+  }
 
   .movies.container h2 {
     padding-top: 10px;
@@ -883,6 +880,7 @@ footer p {
   .responsive-menu {
     padding-top: 1em;
   }
+
   .card-trending-container,
   .card-news-container {
     gap: 3em;
@@ -924,39 +922,36 @@ footer p {
     margin-left: 50%;
   }
 
-    
+  .topnav {
+    overflow: hidden;
+    background-color: #333333;
+  }
 
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333333;
-}
+  .topnav a:hover {
+    background-color: #ddd;
+    color: #D4AF37;
+  }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+  .topnav a.active {
+    background-color: #333333;
+    color: #D4AF37;
+  }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: #D4AF37;
-}
+  .topnav .icon {
+    display: none;
+  }
 
-.topnav a.active {
-  background-color: #333333;
-  color: #D4AF37;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-/* .fa-house:before {
+  /* .fa-house:before {
   background: red;
   color: blue;
 }
@@ -966,26 +961,26 @@ footer p {
   color: blue;
 } */
 
-span {
-  margin-left: 5px;
-}
+  span {
+    margin-left: 5px;
+  }
 
 }
 
 /* Aqui comienza estilo de CATEGORIAS */
-#boton-categorias{
+#boton-categorias {
   color: #D4AF37;
   border: none;
   background-color: none;
-  
+
 }
 
-#lista-categorias{
+#lista-categorias {
   background-color: #0B173B;
-  
-  
+
+
 }
 
-#texto{
+#texto {
   color: #D4AF37;
 }
