@@ -32,3 +32,4 @@ typeWriter
 .typeString('Próximos estrenos')
  .pauseFor(600)
  .start();
+
