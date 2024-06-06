@@ -42,13 +42,13 @@
     box-sizing: border-box;
 }
 
-.form-group_login button {
-  /*   width: 100%;
+/* .form-group_login button {
+    width: 100%;
     padding: 10px;
     background-color: #080F28;
     border: solid #D4AF37;
     border-radius: 5px;
-    /* display: inline-block; */
+    display: inline-block; 
     background-color: #D4AF37;
     color: #080F28;
     text-align: center;
@@ -57,21 +57,20 @@
     border-radius: 16px;
     margin-bottom: 10px;
     cursor: pointer;
-    font-size: 16px; /* Tamaño de fuente */
-    display: inline-block; /* Mostrar como un elemento de línea */
-}
+    font-size: 16px;  Tamaño de fuente 
+    display: inline-block; Mostrar como un elemento de línea
+} */
 
-.form-group_login button:hover {
-    background-color: #333; /* Fondo negro oscuro al pasar el ratón */
-}
+/* .form-group_login button:hover {
+    background-color: #333; Fondo negro oscuro al pasar el ratón
+} */
 
 .form-group_login .register-button {
- /*    background-color: #080F28;
+    background-color: #080F28;
     border: solid #D4AF37;
     border-radius: 5px;
-    margin-top: 10px; */
-    /* display: inline-block; */
-
+    margin-top: 10px;
+    display: inline-block;
     background-color: #D4AF37;
     color: #080F28;
     text-align: center;
@@ -80,7 +79,7 @@
     border-radius: 16px;
     margin-bottom: 10px;
     cursor: pointer;
-    font-size: 16px; /* Tamaño de fuente */
+    font-size: 16px;  /* Tamaño de fuente */ 
     display: inline-block; /* Mostrar como un elemento de línea */
 }
 

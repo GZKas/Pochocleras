@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pochocleras-Pelis | Películas Online</title>
     <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="../style.css">
+    
     
 
 </head>
@@ -42,18 +44,19 @@
         <div class="container_login">
             <h2>Iniciar Sesión</h2>
             <form action="">
-                <div>
-                    <label for="nombrelg">Nombre</label>
+                <div class="form-group_login">
+                    <label for="nombrelg">Usuario:</label>
                     <input type="text" id = "nombrelg">
                 </div>
                 
-                <div>
-                    <label for="passwordlg">Password</label>
+                <div class="form-group_login">
+                    <label for="passwordlg">Password:</label>
                     <input type="password" id = "passwordlg">
                 </div>
                 
-                <input type="submit" onclick = "return enviarFormulario()" value="Enviar">
-             </form>
+                <input style="border-radius: 16px; margin-bottom: 10px; background-color: #D4AF37; width: 30%;" type="submit" onclick = "return enviarFormulario()" value="Enviar">
+                
+            </form>
             <div id="error"></div>
         </div>
     </main>
